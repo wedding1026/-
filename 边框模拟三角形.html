@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* filter: grayscale(100%); */
+            /* filter: blur(opx); */
+            z-index: 0;
+        }
+        .a{
+            width: 0px;
+            height: 0px;
+            /* 边框模拟三角形*/
+            border-left:130px solid transparent;
+            border-top:130px solid transparent;
+            border-bottom:130px solid black;
+            border-right:130px solid transparent;
+            color: blanchedalmond;
+            /* 过度 */
+            transition: 1s;
+            /* transform: translate(100px,100px); */
+            margin: 200px auto;
+            
+        }
+        .a:hover{
+            width: 200px;
+            height: 0px;
+            border-left:0px solid transparent;
+            border-top:0px solid transparent;
+            border-bottom:200px solid skyblue;
+            border-right:0px solid transparent;
+            color: blanchedalmond;
+            transition: 1s ease-out;
+            transform: translate(100px,100px);
+            transform: rotate(36000deg);
+        }
+        .b{
+            width: 10px;
+            height: 10px;
+            border: 200px solid skyblue;
+            border-radius: 100%;
+            /* box-shadow: 10px inset; */
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                margin: 300px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+    <script>
+    
+        function aa(i){
+          if(i===1){return i}
+          
+            return i+aa(i-1)
+          
+        }
+       let b =  aa(100)
+       console.log(b)
+
+
+       
+       function bb(a,c){
+         return (a+c)*c/2
+       }
+       let dd=bb(1,100)
+       console.log(dd)
+    </script>
+</html>

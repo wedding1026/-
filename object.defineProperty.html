@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+//        let arr = [1,1,1,13,13,1,1,2,2,5,6,5,8,77,77,11,1,1]
+/*         function qu(arr){
+          for(let i = 0; i<arr.length; i++){
+            for(let j = i+1;j<arr.length; j++){
+              if(arr[i] == arr[j]){
+                arr.splice(j,1);
+                j--
+              }
+            }
+          }
+          return arr;
+        }
+        
+      console.log(qu(arr)) */
+    
+    
+/*       function unique(arr) {
+      for (var i = 0; i < arr.length; i++) {
+        for (var j = i+1; j < arr.length; j++) {
+          if (arr[i] == arr[j]) {         //第一个等同于第二个，splice方法删除第二个
+            arr.splice(j, 1);
+            j--;
+          }
+        }
+      }
+      return arr;
+    }
+    var arr = [1, 1,false, undefined, undefined, null, null, NaN, NaN, 'NaN', 0, 0, 'a', 'a', {}, {}];
+    console.log(unique(arr)) */
+
+/*     let num = [11,33,11,33] */
+/*     function uni(num){
+      for(let o = 0; o<num.length; o++){
+        for( let p = o+1; p<num.length; p++){
+          if(num[o] == num[p]){
+            num.splice(p,1)
+            p--
+          }
+        }
+      }
+      return num
+    }
+    console.log(uni(num)) */
+    //es6中的set方法去重
+/*     function qu(arr){
+      return Array.from (new Set(arr))
+    }
+    console.log(qu(arr)) */
+
+    //扁平化数组
+    let num = [[1,2],[3,4,4],[5,6,7,8],9]
+    function fn(num){
+      return [].concat.apply([],num)
+
+    }
+    console.log('haha',fn(num))
+  </script>
+</body>
+
+</html>
